@@ -1,24 +1,33 @@
-import home from "../pages/home";
-import titreA from "../pages/titre1";
-import titreB from "../pages/titre2";
+import React from "react"
+import Home from "../pages/home";
+import TitreA from "../pages/titreA";
+import TitreB from "../pages/titreB";
+import  Error404Page from '../pages/Error404Page';
+
 
 export const menus = [
     {
         title : "home",
         path : "/",
         exact : true,
-        component : home
+        component : <Home />
     },
     {
-        title : "titre1",
-        path : "/titre1",
+        title : "titreA",
+        path : "/titreA",
         exact : true,
-        component : titreA
+        component : <TitreA />
     },
     {
-        title : "titre2",
-        path : "/titre2",
+        title : "titreB",
+        path : "/titreB",
         exact : true,
-        component : titreB
+        component : <TitreB />
+    },
+    {
+        title : "page 404",
+        path : "*",
+        exact : false,
+        component : <Error404Page />
     }
 ]
