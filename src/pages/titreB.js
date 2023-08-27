@@ -1,5 +1,8 @@
 import React from "react"
 
-const TitreB = () =>  <h1>Titre B</h1>
+const TitreB = (props) =>  {
+    console.log(props)
+    return <h1>TitreB</h1> 
+}
 
 export default TitreB

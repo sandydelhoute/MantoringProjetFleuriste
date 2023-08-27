@@ -2,7 +2,7 @@ import React from "react"
 import Home from "../pages/home";
 import TitreA from "../pages/titreA";
 import TitreB from "../pages/titreB";
-import  Error404Page from '../pages/Error404Page';
+import Error404Page from '../pages/Error404Page';
 
 
 export const menus = [
@@ -10,24 +10,28 @@ export const menus = [
         title : "home",
         path : "/",
         exact : true,
-        component : <Home />
+        element : <Home />,
+        componentBis : Home
     },
     {
         title : "titreA",
         path : "/titreA",
         exact : true,
-        component : <TitreA />
+        element : <TitreA />,
+        componentBis : TitreA
     },
     {
         title : "titreB",
         path : "/titreB",
         exact : true,
-        component : <TitreB />
+        element : <TitreB />,
+        componentBis : TitreB
     },
     {
         title : "page 404",
         path : "*",
         exact : false,
-        component : <Error404Page />
+        element : <Error404Page />,
+        componentBis : Error404Page
     }
 ]
