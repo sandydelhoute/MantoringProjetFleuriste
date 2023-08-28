@@ -1,7 +1,7 @@
 import React from "react"
 import Home from "../pages/home";
 import TitreA from "../pages/titreA";
-import TitreB from "../pages/titreB";
+import Contact from "../pages/Contact";
 import Error404Page from '../pages/Error404Page';
 
 
@@ -21,11 +21,11 @@ export const menus = [
         componentBis : TitreA
     },
     {
-        title : "titreB",
-        path : "/titreB",
+        title : "Contact",
+        path : "/Contact",
         exact : true,
-        element : <TitreB />,
-        componentBis : TitreB
+        element : <Contact />,
+        componentBis : Contact
     },
     {
         title : "page 404",
