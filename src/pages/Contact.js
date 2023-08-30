@@ -42,24 +42,26 @@
                     justifyContent: "center",
                     height: "100%"}}>
                 
-                    <form>
-                        <label>Name :</label>
-                        <input type="text" defaultValue={name} onChange={saveName} />
-                        <br /><br />
-                        
-                        <label>Fistname :</label>
-                        <input type="text" defaultValue={firstName} onChange={saveFirstName} />
-                        <br /><br />
-
-                        <label>Email :</label>
-                        <input type="text" defaultValue={email} onChange={saveEmail} />
-                        <br /><br />
-
-                        <label>Message :</label>
-                        <textarea defaultValue={message} onChange={saveMessage} />
-                        <br /><br />
-
-                        <button type="button" onClick={sendForm}> Send</button>
+                    <form className="border border-secondary rounded-2 p-2">
+                        <div className="form-group">
+                            <label>Name :</label>
+                            <input type="text" className="form-control" defaultValue={name} onChange={saveName} />
+                        </div>
+                        <div className="form-group">
+                            <label>Fistname :</label>
+                            <input type="text" className="form-control" defaultValue={firstName} onChange={saveFirstName} />
+                        </div>
+                        <div className="form-group">
+                            <label>Email :</label>
+                            <input type="email" className="form-control" defaultValue={email} onChange={saveEmail} />
+                        </div>
+                        <div className="form-group">
+                            <label>Message :</label>
+                            <textarea className="form-control" defaultValue={message} onChange={saveMessage} />
+                        </div>
+                        <div className="text-center mt-2">
+                        <button type="button" className="btn btn-primary" onClick={sendForm}> Send</button>
+                        </div>
                     </form>
                 </div> 
             </>
