@@ -1,10 +1,12 @@
 import React from "react"
 
-const Produit = (props) =>{
+const Produit = ({produit}) =>{
     return (
         <>
-            <label>{props.produit.name}</label>
+            <label>{produit.name}</label>
             <br/>
+            <img src={produit.imageUrl} alt={"Photo du "+ produit.name}/>
+            <hr/>
         </>
     )
 }
