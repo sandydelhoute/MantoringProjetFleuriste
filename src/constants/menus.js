@@ -4,7 +4,7 @@ import Products from "../pages/Products";
 import Contact from "../pages/Contact";
 import Error404Page from '../pages/Error404Page';
 import AboutUs from '../pages/AboutUs';
-import ProductDetail from '../pages/ProductDetail';
+import Product from '../pages/Product';
 import Profile from '../pages/Profile';
 
 const menus = [
@@ -30,9 +30,9 @@ const menus = [
         display : true,
     },
     {
-        title : "ProduitDetail",
-        path : "/ProduitDetail/:Id",
-        element : <ProductDetail />,
+        title : "Produit",
+        path : "/Produit/:Id",
+        element : <Product />,
         exact : true,
         display : false,
     },

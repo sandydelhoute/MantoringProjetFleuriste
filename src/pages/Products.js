@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react"
-import Product from "../components/products/Product"
+import ProductCard from "../components/products/ProductCard"
 
 import productService from "../services/product.service"
 
@@ -14,7 +14,7 @@ const Products = () => {
         <>
             <h1>Produits</h1>
             <div className="container d-flex flex-wrap align-items-center" >
-                {products.map((product, index) => <Product product={product} key={index}/> )}
+                {products.map((product, index) => <ProductCard product={product} key={index}/> )}
             </div>
         </>
     )

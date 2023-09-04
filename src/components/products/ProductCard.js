@@ -3,7 +3,7 @@ import { Link } from "react-router-dom"
 
 import '../../styles/App.css'
 
-const Product = ({product}) =>{
+const ProductCard = ({product}) =>{
     return (
         <Link to={`/ProduitDetail/${product.id}`}>
             <div className="m-2 card" style={{width: "18rem"}}>
@@ -17,4 +17,4 @@ const Product = ({product}) =>{
     )
 }
 
-export default Product
+export default ProductCard

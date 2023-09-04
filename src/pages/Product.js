@@ -3,7 +3,7 @@ import { useParams } from "react-router"
 import productService from "../services/product.service"
 import Error404Page from "./Error404Page";
 
-const ProductDetail = () =>{
+const Product = () =>{
     let params = useParams();
     const [product, setProduct] = useState()
     useEffect(() =>{
@@ -25,4 +25,4 @@ const ProductDetail = () =>{
     )
 }
 
-export default ProductDetail
+export default Product
