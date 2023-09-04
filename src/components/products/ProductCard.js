@@ -5,7 +5,7 @@ import '../../styles/App.css'
 
 const ProductCard = ({product}) =>{
     return (
-        <Link to={`/ProduitDetail/${product.id}`}>
+        <Link to={`/Produit/${product.id}`}>
             <div className="m-2 card" style={{width: "18rem"}}>
                 <img className="card-img-top" src={product.imageUrl} alt={"Photo du "+ product.name} />
                 <div className="card-body">
