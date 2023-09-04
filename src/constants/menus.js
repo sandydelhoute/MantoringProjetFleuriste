@@ -5,12 +5,20 @@ import Contact from "../pages/Contact";
 import Error404Page from '../pages/Error404Page';
 import AboutUs from '../pages/AboutUs';
 import ProductDetail from '../pages/ProductDetail';
+import Profile from '../pages/Profile';
 
 const menus = [
     {
         title : "Home",
         path : "/",
         element : <Home />,
+        exact : true,
+        display : true,
+    },
+    {
+        title : "Profil",
+        path : "/Profil",
+        element : <Profile />,
         exact : true,
         display : true,
     },
