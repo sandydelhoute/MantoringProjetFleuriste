@@ -3,6 +3,8 @@ import { Link } from "react-router-dom"
 
 import menus from "../constants/menus.js"
 
+import logoImg from "../images/logo.png"
+
 const Menu = () =>{
     return menus.map((menu, index) =>{
         return(
@@ -23,10 +25,15 @@ const Menus = () =>{
 
     return (
         <nav className="navbar navbar-expand-lg navbar-light bg-light">
-            <button className="navbar-toggler" onClick={handleNavCollapse} type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <div className="container-fluid">
+                <a className="navbar-brand" href="/">
+                    <img src={logoImg} alt="Logo" width="50" height="50" />
+                </a>
+            <button className="navbar-toggler" onClick={handleNavCollapse} type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span className="navbar-toggler-icon"></span>
             </button>
-            <div className={`${isCollapse ? 'collapse' : ''} navbar-collapse`} id="navbarSupportedContent">
+            </div>
+            <div className={`${isCollapse ? 'collapse' : ''} navbar-collapse`} id="navbarNav">
                 <ul className="navbar-nav mr-auto">
                     <Menu />
                 </ul>
