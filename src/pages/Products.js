@@ -13,7 +13,9 @@ const Products = () => {
     return(
         <>
             <h1>Produits</h1>
-            {products.map((product, index) => <Product product={product} key={index}/> )}
+            <div className="container d-flex flex-wrap align-items-center" >
+                {products.map((product, index) => <Product product={product} key={index}/> )}
+            </div>
         </>
     )
 }
