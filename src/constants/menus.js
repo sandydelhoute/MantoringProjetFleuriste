@@ -4,6 +4,7 @@ import Produits from "../pages/Produits";
 import Contact from "../pages/Contact";
 import Error404Page from '../pages/Error404Page';
 import AboutUs from '../pages/AboutUs';
+import ProduitDetail from '../components/ProduitDetail';
 
 const menus = [
     {
@@ -19,6 +20,13 @@ const menus = [
         element : <Produits />,
         exact : true,
         display : true,
+    },
+    {
+        title : "ProduitDetail",
+        path : "/ProduitDetail/:Id",
+        element : <ProduitDetail />,
+        exact : true,
+        display : false,
     },
     {
         title : "Contact",
