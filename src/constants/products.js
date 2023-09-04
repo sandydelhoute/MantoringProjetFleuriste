@@ -1,7 +1,7 @@
 const replaceStr = "[SEED]"
 const imageUrl= "https://picsum.photos/seed/"+replaceStr+"/200"
 
-const produits = [
+const products = [
     {
         id: 1,
         name: "Produit 1",
@@ -28,4 +28,4 @@ const produits = [
     }
 ]
 
-export default produits
+export default products

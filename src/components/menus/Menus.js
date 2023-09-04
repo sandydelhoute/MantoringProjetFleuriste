@@ -1,9 +1,9 @@
 import React, { useState } from "react"
 import { Link } from "react-router-dom"
 
-import menus from "../constants/menus.js"
+import menus from "../../constants/menus.js"
 
-import logoImg from "../images/logo.png"
+import logoImg from "../../images/logo.png"
 
 const Menu = () =>{
     return menus.map((menu, index) =>{
