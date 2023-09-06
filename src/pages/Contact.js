@@ -1,11 +1,17 @@
-    import React, { useEffect, useState } from "react"
+    import React, { useState, useContext, useEffect } from "react"
+    import UserContext from "../context/UserContext";
 
     const Contact = () => {
+        const {user} = useContext(UserContext);
         const [name, setName] = useState();
         const [firstName, setFirstName] = useState();
         const [email, setEmail] = useState();
         const [message, setMessage] = useState();
-        const [user, setUser] = useState();
+
+        useEffect(() => {
+            user ? setName(user.getId()) : setName("");
+        },[user, setName]);
+        
 
         const saveName = (e) => {
             setName(e.target.value)
@@ -20,18 +26,8 @@
             setMessage(e.target.value)
         }
         const sendForm = () =>{
-            const user = {
-                name,
-                firstName,
-                email,
-                message
-            }
-            setUser(user)
+            console.log(`Send new message : From ${name} ${firstName} (${email}) Content : ${message}`)
         }
-
-        useEffect(() => {
-            // console.log('useEffect User :', user)
-        }, [setUser, user])
 
         return (
             <>

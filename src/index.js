@@ -10,9 +10,7 @@
     // Render your React component instead
     const AllRoutes = () => {
 
-        const [user, setUser] = useState({
-            name: "Doryan"
-        })
+        const [user, setUser] = useState()
 
         return <>
             <UserContext.Provider value={{ user, setUser }}> 
