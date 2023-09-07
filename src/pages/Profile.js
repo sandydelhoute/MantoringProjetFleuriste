@@ -1,6 +1,7 @@
 import React, {useContext, useState} from "react"
 import UserContext from "../context/UserContext";
 import userObject from "../class/User"
+import constants from "../utils/constant";
 
 const Profile = () => {
     const {user, setUser} = useContext(UserContext);
@@ -17,7 +18,7 @@ const Profile = () => {
         setUser(new userObject(id, password))
     }
     const sendDisconnect = () =>{
-        setUser(null)
+        setUser(constants.localStrorage.userLocalStorageDefaultValue)
     }
 
     return user ?

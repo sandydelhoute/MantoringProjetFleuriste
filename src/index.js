@@ -7,11 +7,12 @@ import "bootstrap/dist/js/bootstrap.bundle.min";
 import Layout from "./components/design/Layout";
 import UserContext from "./context/UserContext";
 import useLocalStorage from "./hooks/useLocalStorage";
+import constants from "./utils/constant";
 
 // Render your React component instead
 const AllRoutes = () => {
 
-    const [user, setUser] = useLocalStorage("user",null);
+    const [user, setUser] = useLocalStorage(constants.localStrorage.userLocalStorageName,constants.localStrorage.userLocalStorageDefaultValue);
 
     return <>
         <UserContext.Provider value={{ user, setUser }}> 
