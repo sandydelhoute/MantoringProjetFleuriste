@@ -1,5 +1,4 @@
 .card{
-    width: 18rem;
     border-radius: 8px;
     border: 1px solid #cccccc;
     display: flex;
@@ -11,6 +10,7 @@
     transition: all linear 200ms;
     text-decoration: none;
     color: black;
+    width: 18rem;
 }
 
 .card:hover{
@@ -19,4 +19,16 @@
   z-index: 1;
   box-shadow: 1px 1px 10px rgba(0,0,0,.3);
   cursor: pointer;
+}
+
+
+.parent {
+  display: flex;
+}
+.LeftDiv{
+  width: 30%;
+}
+.LeftDiv > img{
+  width:100%;
+  border-radius: 2%;
 }

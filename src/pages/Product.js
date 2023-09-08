@@ -33,8 +33,8 @@ const Product = () =>{
             </div>
             <div className="OthersProducts">
                 <h4>D'autres choix son disponible sur ce site :</h4>
-                <div className="container d-flex flex-wrap align-items-center" >
-                    {products.map((product, index) => <ProductCard product={product} key={index}/> )}
+                <div className="m-2 d-flex" >
+                    {products.map((product, index) => <ProductCard product={product} key={index} overitedWitdh={14}/> )}
                 </div>
             </div>
         </> 
