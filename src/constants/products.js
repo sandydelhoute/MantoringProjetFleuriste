@@ -6,7 +6,7 @@ const products = [
         id: 1,
         name: "Produit 1",
         description : 'Produit 1 ...',
-        prix : 30.33,
+        price : 30.33,
         imageUrl: imageUrl.replace(replaceStr, "Prodduit1"),
         cdate : ""
     },
@@ -14,7 +14,7 @@ const products = [
         id: 2,
         name: "Produit 2",
         description : 'Produit 2 ...',
-        prix : 30.33,
+        price : 15.21,
         imageUrl: imageUrl.replace(replaceStr, "Prodduit2"),
         cdate : ""
     },
@@ -22,7 +22,7 @@ const products = [
         id: 3,
         name: "Produit 3",
         description : 'Produit 3 ...',
-        prix : 30.33,
+        price : 9.99,
         imageUrl: imageUrl.replace(replaceStr, "Prodduit3"),
         cdate : ""
     }
