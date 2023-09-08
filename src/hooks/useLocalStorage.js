@@ -1,6 +1,11 @@
 import { useEffect, useState } from "react"
+import UserObject from '../class/User'
+import constants from "../utils/constant"
 
 const getValueFromStorage = (key) => {
+    if(key === constants.localStrorage.userLocalStorageName){
+        return UserObject.createFromJson(JSON.parse(localStorage.getItem(key)))
+    }
     return JSON.parse(localStorage.getItem(key))
 }
 
