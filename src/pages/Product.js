@@ -7,16 +7,12 @@ import ProductCard from "../components/products/ProductCard";
 const Product = () =>{
     let params = useParams();
     const [product, setProduct] = useState()
-    useEffect(() =>{
-        if(!product){
-            setProduct(productService.getById(params.Id))
-        }
-    },[product,params])
-
     const [products, setProducts] = useState([])
+
     useEffect(() =>{
+        setProduct(productService.getById(params.Id))
         product ?  setProducts(productService.getRandomProducts(3, product.id)) : null
-    }, [product, setProducts])
+    },[product,params, product, setProducts])
 
     return (
         product ? 
