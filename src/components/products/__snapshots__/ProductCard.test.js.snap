@@ -2,36 +2,33 @@
 
 exports[`Test render ProductCard Test render ProductCard 1`] = `
 <a
+  className="m-2 card"
   href="/Produit/1"
   onClick={[Function]}
->
-  <div
-    className="m-2 card"
-    style={
-      {
-        "width": "18rem",
-      }
+  style={
+    {
+      "width": "undefinedrem",
     }
+  }
+>
+  <img
+    alt="Photo du Produit 1"
+    className="card-img-top"
+    src="test"
+  />
+  <div
+    className="card-body"
   >
-    <img
-      alt="Photo du Produit 1"
-      className="card-img-top"
-      src="test"
-    />
-    <div
-      className="card-body"
+    <h5
+      className="card-title"
     >
-      <h5
-        className="card-title"
-      >
-        Produit 1
-      </h5>
-      <p
-        className="card-text"
-      >
-        Produit 1 ...
-      </p>
-    </div>
+      Produit 1
+    </h5>
+    <p
+      className="card-text"
+    >
+      Produit 1 ...
+    </p>
   </div>
 </a>
 `;
